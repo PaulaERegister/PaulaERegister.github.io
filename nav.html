@@ -1,7 +1,46 @@
+<script>
+    let scrollpos = window.scrollY
+    const header = document.querySelector("nav")
+    const header_height = header.offsetHeight
+    var body = document.body,
+    html = document.documentElement;
+    var windowHeight = window.innerHeight
+    || document.documentElement.clientHeight
+    || document.body.clientHeight;
+    var height = Math.max( body.scrollHeight, body.offsetHeight, 
+                           html.clientHeight, html.scrollHeight, html.offsetHeight);
+    const add_class_on_scroll = () => {
+        header.classList.add("fade-in");
+        header.classList.remove('fade-out');
+        header.classList.add("pin-to-top");
+        header.classList.add("black-background")
+    }
+    const remove_class_on_scroll = () => {
+        header.classList.remove("fade-in"); 
+        header.classList.add("fade-out");
+        header.classList.remove("black-background");
+    }
+    window.addEventListener('scroll', function() { 
+        scrollpos = window.scrollY;
+        if (scrollpos >= header_height) { 
+            if (scrollpos >= height-windowHeight) {
+                header.classList.add("fade-out")
+                header.classList.remove("pin-to-top");
+            }
+            else {
+                add_class_on_scroll();
+            }
+        }
+        if(scrollpos < header_height) {
+            remove_class_on_scroll();
+        }
+      })
+</script>
 <nav class="nav-bar" id="nav-bar">
-    <a class="nav-link" href="#personal">Personal</a>
     <a class="nav-link" href="#portfolio">Portfolio</a>
-    <a class="nav-link" target="_blank" href="assets/paula_register_resume.pdf">Resume</a>
+    <a class="nav-link" href="#resume">Resume</a>
+    <a class="nav-link" href="#education">Education</a>
+    <a class="nav-link" href="#personal">Personal</a>
 </nav>
 <div class="header-image">
     <h1 class="header-tagline fade-in">Hi, I'm</h1>
@@ -19,4 +58,4 @@
         </div>
     </a>
 </div>
-<script src="./assets/javascript/nav.js"></script>
+
