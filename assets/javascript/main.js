@@ -26,12 +26,19 @@
                     $(this).animate({'opacity':'1'},1500);
                 }
             });
+            $('.animate').each( function(i){
+                var bottom_of_object = $(this).position().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                if( bottom_of_window > bottom_of_object ){
+                    $(this).css({"left":"2000px"}).animate({"left":"0px"}, "slow");
+                }
+            });
         });
     });
-    ScrollReveal().reveal('.intro');
+/*    ScrollReveal().reveal('.intro');
     ScrollReveal().reveal('.headline');
     ScrollReveal().reveal('.intro-slide', {duration: 1000, distance: '110px', origin: 'left', reset: true});
     ScrollReveal().reveal('.intro-slide-interval', {duration: 1500, distance: '25%', origin: 'left', interval: 100, reset:true});    
     ScrollReveal().reveal('.see-more', {duration: 2000, distance: '50%', origin: 'bottom', reset:true});     
     ScrollReveal().reveal('.portfolio-interval', {duration: 1500, distance: '25%', origin: 'left', interval: 600, reset:true});      
-    ScrollReveal().reveal('.skills-interval', {duration: 1500, distance: '50%', origin: 'top', interval: 600, reset:true, delay: 0}); 
+    ScrollReveal().reveal('.skills-interval', {duration: 1500, distance: '50%', origin: 'top', interval: 600, reset:true, delay: 0}); */

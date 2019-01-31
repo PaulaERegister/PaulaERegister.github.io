@@ -61,7 +61,7 @@ h2 {
 
 .content {
     margin: 0;
-    padding: 0; /* !important*/
+    padding: 0;
 }
 .intro-h1 {
     text-align: center;
@@ -236,14 +236,8 @@ div .header-text:after {
     padding-bottom: 1%;
     padding-left:1%;
     padding-right:1%;
-/*
-    box-shadow: 2px 5px 20px 0px rgba(0, 0, 0, 0.05);
-*/
     padding-top: 3%;
     height:92vh;
-/*
-    background-color:white;
-*/
 }
 
 .text-content {
@@ -295,9 +289,6 @@ div .header-text:after {
     background-size: cover;
     background-color: transparent;
     background-position: 90% 90%;
-/*
-    background-image: url(geeks-2894621_1920.jpg);
-*/
     background-image: url(../../media/designer-workplace-working-on-website-layout-picjumbo-com.jpg);
     background-attachment: fixed;
     min-height: 0px;
@@ -342,7 +333,6 @@ div .header-text:after {
     color: rgba(255, 255, 255, 0.57);
 }
 
-
 .text{
     position:relative;
     display:block;
@@ -376,9 +366,6 @@ div .header-text:after {
     -webkit-animation-delay:.3s;
     animation-delay: .3s;
 }
-/*.slides {
-    width:100vw;
-}*/
 .hide {
  display:none;
 }
@@ -386,8 +373,14 @@ div .header-text:after {
     display: inline-block;
 }
 .resume-div {
-    width:50%;     margin-left: auto;
-    margin-right: auto; padding:3%; padding-top:1%; margin-top:1%;box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.08); background-color: white
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding:3%;
+    padding-top:1%;
+    margin-top:1%;
+    box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.08);
+    background-color: white;
 }
 .resume-top-padding {
     padding-top:1%;
@@ -619,6 +612,9 @@ div .header-text:after {
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+.ul-rig {
+    background-color: white;
 }
 .rig-cell {
     height:35vh;

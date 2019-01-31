@@ -28,7 +28,6 @@
     <body>
         <!--Navigation bar-->
         <div id="header" class="head"></div>
-
         <!--end of Navigation bar-->
         <div class="content" id="body"> 
             <a name="intro"></a>
@@ -42,12 +41,12 @@
                     </h2>
                     <img src="./media/paula_register.png" class="paula_img hideme" alt="A headshot of Paula Register">
                     <p class="intro-description hideme">
-                        I'm Paula Register, a full-stack web developer and Computer Science major at Rochester Institute of Technology from Nashville, Tennessee. Building functional, elegant solutions and creating clean, user-friendly websites is my passion. You can check out some of my lastest work below!
+                        I'm Paula Register, a full-stack web developer and Computer Science major at Rochester Institute of Technology from Nashville, Tennessee. You can check out some of my lastest work below!
                     </p>
-                    <p class="intro-description">
+                    <p class="intro-description hideme">
                         You can contact me at per4521@g.rit.edu.
                     </p>
-                    <div class="see-more">
+                    <div class="see-more hideme">
                         <p class="p-see-more">
                             See what I've done
                         </p>
@@ -85,7 +84,7 @@
             </div>
             <div class="text-content portfolio portfolio-content">
                 <div class="portfolio-flex">
-                    <h1>Coming Soon...</h1>
+                    <h1 class="animate">Coming Soon...</h1>
                 </div> 
                 
                 <div class="portfolio-what-i-do-image">
@@ -97,17 +96,17 @@
                 </div>
             </div>
             <div class="slides">
-                    <ul id="rig" style="background-color: white;">
+                    <ul id="rig" class="ul-rig">
                         <li>
                             <a class="rig-cell" href="./national-general.html">
-                                <img class="rig-img" src="media/national-general-insurance-logo-vector.svg" alt="National General Insurance Company">
+                                <img class="rig-img ul-rig" src="media/national-general-insurance-logo-vector.svg" alt="National General Insurance Company">
                                 <span class="rig-overlay"></span>
                                 <span class="rig-text hide-header">National General Insurance</span>
                             </a>
                         </li>
                         <li>
                             <a class="rig-cell" href=./tiger-center.html>
-                                <img class="rig-img" src="media/Rochester_Institute_of_Technology_seal.svg" style="background-color: white;" alt="TigerCenter">
+                                <img class="rig-img ul-rig" src="media/Rochester_Institute_of_Technology_seal.svg" alt="TigerCenter">
                                 <span class="rig-overlay"></span>
                                 <span class="rig-text hide-header">TigerCenter</span>
                             </a>
@@ -121,7 +120,7 @@
                         </li>
                     </ul>
                 </div>
-            <div class="text-content resume">
+<!--            <div class="text-content resume">
                 <h1 class="h1-accent clickable resume-h1">
                     <a name="resume">Resume</a>
                 </h1>
@@ -181,7 +180,7 @@
                 <h4 class="centered">
                     <a class="resume-link" href="assets/resume.pdf" target="_blank">Click for a link to my resume</a>
                 </h4>
-            </div>
+            </div>-->
         </div>
         </div>
         <!--Footer-->
@@ -189,10 +188,9 @@
             <div class="footer-padding">
                 <nav class="footer-nav-bar">
                     <a class="footer-nav" onclick="topFunction()" style="cursor: pointer">Home</a>
-                    <a class="footer-nav" href="#portfolio">Portfolio</a>
-                    <a class="footer-nav" href="#resume">Resume</a>
-                    <a class="footer-nav" href="#education">Education</a>
                     <a class="footer-nav" href="#personal">Personal</a>
+                    <a class="footer-nav" href="#portfolio">Portfolio</a>
+                    <a class="footer-nav" target="_blank" href="assets/paula_register_resume.pdf">Resume</a>
                 </nav>
                 <span class="footer-span">
                     Designed and built in HTML, CSS, and Javascript by Paula Register, 2018.
@@ -203,4 +201,3 @@
     </body>
 </html>
 <script src="./assets/javascript/main.js"></script>
-

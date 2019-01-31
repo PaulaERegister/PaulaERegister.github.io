@@ -176,6 +176,9 @@
     .rig-text {
         font-size: 25px;
     }
+    .portfolio-interval {
+        font-size: 1em;
+    }
     .portfolio-what-i-do-image {
         flex-basis: 45vw;
     }
@@ -183,21 +186,6 @@
         font-size: 3em;
     }
 } 
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    
-} 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    
-} 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    
-}
 @media print {
 
     #header, .footer, .paula_img, .skills, .portfolio-image, .portfolio-what-i-do-image,
