@@ -37,6 +37,9 @@
         padding: 2% !important;
         padding-top: 3% !important;
     }
+    .github {
+        display: none;
+    }
     .header-tagline {
         line-height:25vh;
         font-size: 6em;
