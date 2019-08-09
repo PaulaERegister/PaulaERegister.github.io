@@ -297,12 +297,11 @@ div .header-text:after {
 .ul-content {
     background: rgba(184, 181, 163, 0.2);
     border-bottom: 1px solid rgba(153, 152, 148, 0.45);
-
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
-  padding: .5rem 1rem;
-      transition: all 0.25s ease-out;
-box-shadow: inset 0px 1px 2px 1px rgba;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: .5rem 1rem;
+    transition: all 0.25s ease-out;
+    box-shadow: inset 0px 1px 2px 1px rgba;
 }
 ul { list-style-type: none; }
 label {
@@ -330,17 +329,25 @@ input[type=checkbox]:checked ~ ul {
 input[type=checkbox] + label:before{
   content: ' ';
   display: inline-block;
-
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
   border-left: 5px solid currentColor;
-
   vertical-align: middle;
   margin-right: .7rem;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
 
 }
 input[type=checkbox]:checked + label:before {
 	transform: rotate(90deg);
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
 }
 
 .header-text { 
