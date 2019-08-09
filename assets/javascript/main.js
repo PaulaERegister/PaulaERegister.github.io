@@ -28,7 +28,7 @@
             });
         });
     });
-    ScrollReveal().reveal('.intro');
+//    ScrollReveal().reveal('.intro');
     ScrollReveal().reveal('.headline');
 //    ScrollReveal().reveal('.intro-slide', {duration: 1000, distance: '110px', origin: 'left', reset: true});
 //    ScrollReveal().reveal('.intro-slide-interval', {duration: 1500, distance: '25%', origin: 'left', interval: 100, reset:true});    
