@@ -1,0 +1,48 @@
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+  }
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+
+}
+.navbar .nav {
+    margin: 0;
+    font-size: 1em;
+    letter-spacing: 4px;
+}
+
+.navbar .nav li {
+    flex: 1;
+}
+
+.navbar .nav li a {
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+}
+
+.navbar-brand {
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  padding: 0px;
+    font-size:1.5em !important;
+  font-family: 'DancingScriptOTRegular'; 
+}
+.navbar-brand>img {
+  height: 100%;
+  width: auto;
+}
+
+
+
+
+
+
+
